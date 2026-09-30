@@ -1,0 +1,233 @@
+<!DOCTYPE html> 
+<head>
+    <meta charset="UTF-8">     
+    <title>Quiz 1 - Personal Website</title> 
+
+    <link rel="stylesheet" href="style.css"> <!--nyambungin html ke css-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar"> 
+        <div class="container navbar-container"> 
+            <a class="navbar-brand fw-bold nav-route" href="/quiz1">RafWebsite</a>
+            <ul class="navbar-nav">
+                <li><a class="nav-link nav-route" href="/quiz1">Home</a></li>
+                <li><a class="nav-link nav-route" href="/quiz1/profile">Profile</a></li>
+                <li><a class="nav-link nav-route" href="/quiz1/hometown">Hometown</a></li>
+                <li><a class="nav-link nav-route" href="/quiz1/food">Local Food</a></li>
+                <li><a class="nav-link nav-route" href="/quiz1/tourist">Tourist Places</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5"> 
+
+        <section id="section-home" class="page-section"> <!-- ID ini dihubungkan ke file script.js-->
+            <div class="hero-banner text-center mb-4 rounded">
+                <h1 class="display-4 fw-bold">Raf's Hometown</h1>
+                <p class="lead">SURABAYA</p>
+            </div>
+            <div class="row">
+                <!--Profile-->
+                <div class="col-md-6 mb-3"> 
+                    <div class="card h-100 shadow-sm"> 
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">My Profile</h5>
+                                <p class="card-text">About me</p>
+                            </div>
+                            <a href="/quiz1/profile" class="btn btn-primary nav-route mt-3">Get To Know Me!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Hometown -->
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Surabaya</h5>
+                                <p class="card-text">Beautiful town where I was born and live</p>
+                            </div>
+                            <a href="/quiz1/hometown" class="btn btn-primary nav-route mt-3">See Town!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local Food -->
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Local Foods</h5>
+                                <p class="card-text">Traditional food from Surabaya</p>
+                            </div>
+                            <a href="/quiz1/food" class="btn btn-primary nav-route mt-3">See Foods!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tourist Places -->
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title">Tourist Places</h5>
+                                <p class="card-text">Popular Places to visit in Surabaya</p>
+                            </div>
+                            <a href="/quiz1/tourist" class="btn btn-primary nav-route mt-3">See Places!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- /quiz1/profile -->
+        <section id="section-profile" class="page-section">
+            <div class="card shadow-sm p-4"> 
+                <div class="row align-items-center"> 
+                    <div class="col-md-4 text-center mb-3 mb-md-0"> 
+                        <img src="image/me.JPG" alt="Foto Profil" class="profile-img mb-3">
+                    </div>
+                    <div class="col-md-8"> 
+                        <h2>Rafifah Rahmah Admayana</h2>
+                        <p class="text-muted fs-5">5025251208 - Informatics Engineering</p>
+                        <hr> 
+                        <p>An undergraduate student in Informatics Engineering at the Institut Teknologi Sepuluh Nopember (ITS). I am passionate about continuous learning and enjoy participating in activities beyond academics. During high school, I was actively involved in the logistics division and served on organizing committees for various school events, where I developed strong teamwork, organizational, and communication skills. I am enthusiastic about gaining new experiences and growing both personally and professionally.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--/quiz1/hometown-->
+        <section id="section-hometown" class="page-section">
+            <div class="card shadow-sm p-4">
+                <h2 class="mb-3">Surabaya as my hometown</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3"> 
+                        <img src="image/sbymalam.jpg" class="img-fluid rounded shadow-sm" alt="Kota Asal">
+                    </div>
+                    <div class="col-md-6"> 
+                        <h4>About This Town</h4>
+                        <p>Surabaya is a major city in Indonesia and the capital of East Java province. It is located on the northeastern coast of Java and is Indonesia’s second-largest city after Jakarta.</p>
+                        <p>Surabaya is an important commercial, industrial, and port city, with the Port of Tanjung Perak serving as a major shipping hub. It is also historically significant in Indonesia’s independence movement, particularly because of the Battle of Surabaya on November 10, 1945. This history earned it the nickname “City of Heroes” (Kota Pahlawan).</p>
+                        <p>The name Surabaya is popularly associated with sura (shark) and baya (crocodile), which is why a shark and crocodile appear prominently in the city's symbols.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--/quiz1/food-->
+        <section id="section-food" class="page-section">
+            <h2 class="mb-4">Local Foods</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/rujak-cingur.jpeg" class="card-img-top" alt="Makanan 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Rujak Cingur</h5>
+                            <p class="card-text">Rujak cingur is a traditional dish from Surabaya, East Java, Indonesia, made from a mixture of fruits, vegetables, tofu, tempeh, and lontong, served with a thick, savory, slightly sweet and spicy sauce made mainly from petis (fermented shrimp paste) and peanuts. Its most distinctive ingredient is cingur, which means cow’s snout, giving the dish its unique name and chewy texture. It is one of Surabaya’s most famous traditional foods.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/semanggi-suroboyo.avif" class="card-img-top" alt="Makanan 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Semanggi Suroboyo</h5>
+                            <p class="card-text">Semanggi Suroboyo is a traditional dish from Surabaya, Indonesia, made mainly from semanggi leaves (water clover), which are steamed and served with boiled vegetables such as bean sprouts and sweet potatoes. It is topped with a thick, sweet and savory sauce made from pounded peanuts, sweet potato, and fermented soybean paste, then usually eaten with krupuk puli (rice crackers). Semanggi Suroboyo is considered one of Surabaya’s unique traditional foods and is especially known for its distinctive sweet, savory flavor and soft vegetable texture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/rawon.webp" class="card-img-top" alt="Makanan 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Rawon</h5>
+                            <p class="card-text">Rawon is a rich, dark beef soup native to Surabaya and East Java. Its distinctive black color comes from the use of kluwek nuts, which also give the soup a deep, nutty, and savory flavor. It is typically served with warm rice, bean sprouts, salted egg, and shrimp crackers, making it a hearty and comforting local favorite.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/lontongbalap.jpg" class="card-img-top" alt="Makanan 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Lontong Balap</h5>
+                            <p class="card-text">Lontong Balap is a famous street food from Surabaya consisting of rice cakes (lontong), fried tofu, lentho (fried cassava and bean patties), and a generous amount of bean sprouts. It is drenched in a clear, savory broth and usually eaten with a side of spicy prawn paste sambal and seashell (sate kerang).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--/quiz1/tourist-->
+        <section id="section-tourist" class="page-section">
+            <h2 class="mb-4">Tourist Places</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/Wisata-Monumen-Kapal-Selam-Surabaya.png" class="card-img-top" alt="Wisata 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Monumen Kapal Selam Surabaya</h5>
+                            <p class="card-text">Monumen Kapal Selam, or Monkasel, is a historical landmark and museum in Surabaya, Indonesia, featuring a real KRI Pasopati 410, a Soviet-made Whiskey-class submarine that served in the Indonesian Navy from 1962 to 1990. Visitors can enter the submarine and explore its narrow interior, including the crew quarters, control room, and torpedo area, while learning about Indonesia’s naval history. Located near the Kalimas River in central Surabaya, Monkasel is one of the city’s popular tourist attractions and a unique place to experience what life was like aboard a military submarine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/tugu-pahlawan.jpg" class="card-img-top" alt="Wisata 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Monumen Tugu Pahlawan</h5>
+                            <p class="card-text">Tugu Pahlawan, or Heroes Monument, is a famous landmark in Surabaya that commemorates the heroes of the Battle of Surabaya on November 10, 1945. The monument is about 41 meters tall and is a symbol of Surabaya as the “City of Heroes.” The area also has a museum where visitors can learn more about the history of the battle and Indonesia’s struggle for independence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/kbs.jpg" class="card-img-top" alt="Wisata 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Kebun Binatang Surabaya (KBS)</h5>
+                            <p class="card-text">Surabaya Zoo, known locally as KBS, is one of the oldest and most famous zoos in Southeast Asia. Located in the southern part of the city, it features a wide variety of animals, including the iconic Komodo dragon. Right in front of the zoo, you can also find the famous Sura (shark) and Baya (crocodile) statue, which is the official symbol of Surabaya.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/kotalama.jpg" class="card-img-top" alt="Wisata 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Kota Lama</h5>
+                            <p class="card-text">Kota Lama Surabaya is a historic area in Surabaya, East Java, known for its old colonial-era buildings and streets that reflect the city’s history. The area has been revitalized into a tourist destination with heritage buildings, cafes, and public spaces, making it a popular place to explore Surabaya’s past while enjoying its modern atmosphere.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/suramadu.jpg" class="card-img-top" alt="Wisata 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Jembatan Suramadu</h5>
+                            <p class="card-text">The Suramadu National Bridge is the longest bridge in Indonesia, connecting the city of Surabaya on the island of Java to the neighboring island of Madura. Spanning 5.4 kilometers across the Madura Strait, it is an architectural marvel and a popular spot for sightseeing, especially at night when the bridge is beautifully illuminated.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/tp.jpg" class="card-img-top" alt="Wisata 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Tunjungan Plaza</h5>
+                            <p class="card-text">As the second-largest city in Indonesia, Surabaya is famous for its massive shopping centers, and Tunjungan Plaza is the most iconic of them all. Located in the central business district, this supermall is divided into six interconnected sections, offering endless shopping, dining, and entertainment options for visitors and locals alike.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Menghubungkan file HTML dengan file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
